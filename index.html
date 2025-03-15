@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Drapeaux</title>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+
+    <h1 class="text-3xl font-bold mb-4">Entrez votre nationalité</h1>
+    <input type="text" id="nationalite" placeholder="Ex : cameroun" class="border p-2 rounded w-[20rem] text-center">
+    
+    <div id="drapeaux" class="mt-5 flex justify-center mx-20 w-full h-full">
+        <div id="Cameroun" class="flag hidden flex bg-black border border-gray-400 grid grid-cols-3 w-[40rem] h-[20rem]">
+            <div class="bg-green-400"></div>
+            <div class="bg-red-400 flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFF55">
+                    <path d="m626.67-258-39-166.67 129-112-170-15L480-709v362l146.67 89ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/>
+                </svg>                
+            </div>
+            <div class="bg-yellow-400"></div>
+        </div>
+
+        <div id="Japon" class="flag hidden flex border border-gray-400 justify-center items-center w-[40rem] h-[20rem]">
+            <div class="bg-red-400 rounded-full w-[20rem] h-[20rem] "></div>
+        </div>
+
+        <div id="Guinee" class="flag hidden flex grid border border-gray-400 grid-cols-3 w-[40rem] h-[20rem]">
+            <div class="bg-red-400"></div>
+            <div class="bg-yellow-400"></div>
+            <div class="bg-green-400"></div>
+        </div>
+
+        <div id="Senegal" class="flag hidden flex grid border border-gray-400 grid-cols-3 w-[40rem] h-[20rem]">
+            <div class="bg-green-400"></div>
+            <div class="bg-yellow-400 flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#48752C">
+                    <path d="m626.67-258-39-166.67 129-112-170-15L480-709v362l146.67 89ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/>
+                </svg>                
+            </div>
+            <div class="bg-red-400"></div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
